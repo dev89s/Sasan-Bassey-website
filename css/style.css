@@ -1,3 +1,9 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-size: 20px;
+}
 body {
     color: white;
     background-image:
@@ -10,18 +16,54 @@ body {
 p {
     font-size: 1.125rem;
 }
-
 .container {
     max-width: 720px;
     margin: 0px auto;
 }
-
 .header {
     text-align: center;
+    margin: 50px 0px 25px 0px;
 }
-
-form {
+.header h1{
+    margin-bottom: 5px;
+    font-size: 1.5em;
+}
+.header p{
+    font-style: italic;
+    font-size: 1em;
+}
+#survey-form{
     background-color: rgba(27, 27, 50, 0.8);
-    padding: 2.5rem;
+    padding: 45px;
     border-radius: 0.25rem;
+    display: flex;
+    flex-direction: column;
+}
+.form_group{
+    display: block;
+    padding: 15px 0px;
+}
+label, .inputs, #submit{
+    display: block;
+    width: 100%;
+}
+.inputs, #submit{
+    padding: 5px 10px;
+}
+label{
+    padding-bottom: 5px;
+}
+#submit{
+    background-color: aqua;
+    color: white;
+    border: none;
+}
+textarea{
+    height: 100px;
+}
+.choice{
+    margin-right: 10px;
+}
+select{
+    color: grey;
 }
